@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleta de Pago</title>
+</head>
+<body>
+    <h1>Boleta de Pago</h1>
+    <p>Gracias por realizar tu retiro. Aquí está tu boleta:</p>
+    <p>Usuario: <%= usuario.nombre %></p>
+    <p>Monto Retirado: <%= monto %> soles</p>
+    <p>Saldo Restante: <%= saldoRestante %> soles</p>
+    <p>Fecha: <%= fecha %></p>
+    
+    <a href="/boleta" download="boleta.pdf">
+        <button>Descargar Boleta</button>
+    </a>
+</body>
+</html>
